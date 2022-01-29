@@ -13,6 +13,8 @@ namespace SG
 
         public bool isInteracting;
 
+        private Inventory inventory;
+
         [Header("Player Flags")]
         public bool isSprinting;
         public bool isInAir;
@@ -21,6 +23,7 @@ namespace SG
         private void Awake()
         {
             cameraHandler = CameraHandler.singleton;
+            inventory = new Inventory();
         }
 
         void Start()

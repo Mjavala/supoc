@@ -233,6 +233,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6211564304477302163}
+  - component: {fileID: 3746192334236789366}
+  - component: {fileID: 6995852520951645738}
   m_Layer: 0
   m_Name: Sword_01
   m_TagString: Untagged
@@ -258,6 +260,32 @@ Transform:
   m_Father: {fileID: 2831559059780437248}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &3746192334236789366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735195363016046377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07817535, y: 0.02118931, z: 0.48198754}
+  m_Center: {x: 0.00000029082673, y: 0.0017917197, z: -0.08038211}
+--- !u!114 &6995852520951645738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735195363016046377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e2323a137c48340b5f4aba472a5d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeaponDamage: 25
 --- !u!1 &7615009572459684280
 GameObject:
   m_ObjectHideFlags: 0
