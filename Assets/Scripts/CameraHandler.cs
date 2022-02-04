@@ -11,10 +11,8 @@ namespace SG
         public Transform cameraPivotTransform;
         private Transform myTransform;
         private Vector3 cameraTransformPosition;
-        private LayerMask ignoreLayers;
+        public LayerMask ignoreLayers;
         private Vector3 cameraFollowVelocity = Vector3.zero;
-
-        public static CameraHandler singleton;
 
         public float lookSpeed = 0.1f;
         public float followSpeed = 0.1f;
@@ -34,7 +32,6 @@ namespace SG
 
         private void Awake()
         {
-            singleton = this;
             myTransform = transform;
             defaultPosition = cameraTransform.localPosition.z;
             ignoreLayers = ~(1 << 8 | 1 << 9 | 1 << 10);
